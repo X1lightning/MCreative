@@ -600,7 +600,7 @@ img {
   to { transform: translateX(0); opacity: 1; }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .hero-grid {
     text-align: center;
   }
@@ -609,6 +609,37 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.8rem;
+  }
+
+  .brand-mark {
+    width: 52px;
+    height: 52px;
+    padding: 0.5rem;
+    background: var(--ivory);
+    border-color: var(--brass);
+    box-shadow: none;
+    filter: brightness(0) saturate(100%) invert(69%) sepia(24%) saturate(682%) hue-rotate(6deg) brightness(95%) contrast(92%);
+  }
+
+  .hero-frame {
+    padding: 1.5rem;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .hero-lines {
+    display: none;
+  }
+
+  .hero-logo {
+    width: min(300px, 82vw);
+    padding: 1.2rem;
+    margin: 0.5rem auto 0;
+    background: var(--ivory);
+    border: 1px solid var(--brass);
+    box-shadow: none;
+    filter: brightness(0) saturate(100%) invert(69%) sepia(24%) saturate(682%) hue-rotate(6deg) brightness(95%) contrast(92%);
   }
 
   .hero-stats {
