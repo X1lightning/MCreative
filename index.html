@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M Creatives | Art Deco Design Studio</title>
+  <meta name="description" content="M Creatives is a bold Art Deco-inspired design studio specializing in graphic design, laser engraving, and marketing." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#12100b">
+</head>
+<body>
+  <!--
+    Run locally: open this file in a browser.
+    Logo asset: place the provided SVG at ./assets/M.svg (already referenced below).
+  -->
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="M Creatives home">
+        <img src="assets/M.svg" alt="M Creatives logo" class="brand-mark">
+        <span class="brand-name">M Creatives</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="btn btn-outline glint" data-glint="true" data-action="quote">Request a Quote</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Art Deco Design Studio</p>
+          <h1>Elevate Your Brand With Modern Deco Precision.</h1>
+          <p class="lead">M Creatives blends geometric elegance with bold craftsmanship to build visual identities, engraved pieces, and campaigns that command attention.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary glint" data-glint="true" data-action="quote">Request a Quote</button>
+            <a class="btn btn-ghost" href="#portfolio">View Work</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <span class="stat-number">120+</span>
+              <span class="stat-label">Brand Stories</span>
+            </div>
+            <div>
+              <span class="stat-number">30</span>
+              <span class="stat-label">Luxury Partners</span>
+            </div>
+            <div>
+              <span class="stat-number">8</span>
+              <span class="stat-label">Creative Awards</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-frame">
+            <img src="assets/M.svg" alt="" class="hero-logo">
+            <div class="hero-lines"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Signature Services</p>
+          <h2>Crafted Experiences, Polished to a Gleam</h2>
+          <p>Three core offerings, each executed with precision geometry and a luxury finish.</p>
+        </div>
+        <div class="card-grid">
+          <button class="service-card" data-service="graphic" type="button">
+            <span class="icon">O</span>
+            <h3>Graphic Design</h3>
+            <p>Identity systems, packaging, and editorial layouts with Deco linework.</p>
+            <span class="card-cta">Explore details</span>
+          </button>
+          <button class="service-card" data-service="engraving" type="button">
+            <span class="icon">[]</span>
+            <h3>Laser Engraving</h3>
+            <p>Brass, acrylic, and leather engraving for bespoke signage and gifts.</p>
+            <span class="card-cta">Explore details</span>
+          </button>
+          <button class="service-card" data-service="marketing" type="button">
+            <span class="icon">*</span>
+            <h3>Marketing</h3>
+            <p>Campaigns that fuse modern storytelling with classic glamour.</p>
+            <span class="card-cta">Explore details</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Recent Work in Sharp Relief</h2>
+          <p>Elegant solutions for hospitality, fashion, and tech-forward brands.</p>
+        </div>
+        <div class="portfolio-grid">
+          <button class="portfolio-tile pattern-1" data-portfolio="0" type="button">
+            <span class="tile-tag">Hospitality</span>
+            <h3>Aurum Hotel</h3>
+          </button>
+          <button class="portfolio-tile pattern-2" data-portfolio="1" type="button">
+            <span class="tile-tag">Fashion</span>
+            <h3>Velvet Line</h3>
+          </button>
+          <button class="portfolio-tile pattern-3" data-portfolio="2" type="button">
+            <span class="tile-tag">Tech</span>
+            <h3>Orion Devices</h3>
+          </button>
+          <button class="portfolio-tile pattern-4" data-portfolio="3" type="button">
+            <span class="tile-tag">Retail</span>
+            <h3>Deco Apothecary</h3>
+          </button>
+          <button class="portfolio-tile pattern-5" data-portfolio="4" type="button">
+            <span class="tile-tag">Events</span>
+            <h3>Midnight Gala</h3>
+          </button>
+          <button class="portfolio-tile pattern-6" data-portfolio="5" type="button">
+            <span class="tile-tag">Culinary</span>
+            <h3>Brass & Bloom</h3>
+          </button>
+          <button class="portfolio-tile pattern-7" data-portfolio="6" type="button">
+            <span class="tile-tag">Luxury</span>
+            <h3>Atlas Atelier</h3>
+          </button>
+          <button class="portfolio-tile pattern-8" data-portfolio="7" type="button">
+            <span class="tile-tag">Wellness</span>
+            <h3>Marble Glow</h3>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Process</p>
+          <h2>From Spark to Spotlight</h2>
+          <p>Every project follows a precise rhythm, refined with meticulous detail.</p>
+        </div>
+        <ol class="timeline">
+          <li>
+            <span class="step">01</span>
+            <div>
+              <h3>Consult</h3>
+              <p>We listen, measure, and align on ambitions.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step">02</span>
+            <div>
+              <h3>Concept</h3>
+              <p>We sketch the geometry, typography, and mood.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step">03</span>
+            <div>
+              <h3>Craft</h3>
+              <p>We refine details through pattern, texture, and material tests.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step">04</span>
+            <div>
+              <h3>Launch</h3>
+              <p>We deploy with precise alignment across channels.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step">05</span>
+            <div>
+              <h3>Iterate</h3>
+              <p>We optimize after impact, polishing every touchpoint.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Testimonials</p>
+          <h2>Words of Praise, Cast in Gold</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial">
+            <p>"M Creatives turned our lobby into a timeless statement. Every detail feels intentional."</p>
+            <span class="author">-- Clara Dupont, Aurum Hotels</span>
+          </article>
+          <article class="testimonial">
+            <p>"The engraved launch kits made our campaign unforgettable. Pure luxury."</p>
+            <span class="author">-- Marcus Lee, Orion Devices</span>
+          </article>
+          <article class="testimonial">
+            <p>"Their typography and pattern work elevated our packaging overnight."</p>
+            <span class="author">-- Nina Solis, Velvet Line</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's Design Your Next Statement</h2>
+          <p>Tell us about your project and we will respond within two business days.</p>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label class="full">
+            <span>Message</span>
+            <textarea name="message" rows="5" required placeholder="Project goals, timeline, and scope"></textarea>
+          </label>
+          <button class="btn btn-primary glint" type="submit" data-glint="true">Send Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <img src="assets/M.svg" alt="" class="footer-logo">
+        <p>M Creatives - Bold Art Deco design for modern brands.</p>
+      </div>
+      <div>
+        <p class="footer-title">Studio</p>
+        <p>Chicago - New York - Remote</p>
+      </div>
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>hello@mcreatives.co</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="service-modal" role="dialog" aria-modal="true" aria-labelledby="service-title" aria-describedby="service-body" hidden>
+    <div class="modal-overlay" data-modal-close="true"></div>
+    <div class="modal-panel modal-drawer" role="document">
+      <button class="modal-close" type="button" aria-label="Close dialog">x</button>
+      <h3 id="service-title"></h3>
+      <p id="service-body"></p>
+      <ul id="service-list"></ul>
+      <button class="btn btn-primary glint" data-glint="true" data-action="quote">Get a Quote</button>
+    </div>
+  </div>
+
+  <div class="modal" id="portfolio-modal" role="dialog" aria-modal="true" aria-labelledby="portfolio-title" aria-describedby="portfolio-body" hidden>
+    <div class="modal-overlay" data-modal-close="true"></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" type="button" aria-label="Close dialog">x</button>
+      <div class="portfolio-preview" id="portfolio-preview" aria-hidden="true"></div>
+      <div class="modal-content">
+        <span class="tile-tag" id="portfolio-tag"></span>
+        <h3 id="portfolio-title"></h3>
+        <p id="portfolio-body"></p>
+        <div class="modal-nav">
+          <button class="btn btn-ghost" type="button" id="portfolio-prev">Previous</button>
+          <button class="btn btn-ghost" type="button" id="portfolio-next">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <p>Thank you! Your request has been received.</p>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
