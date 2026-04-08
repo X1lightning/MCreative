@@ -1,0 +1,67 @@
+spring:
+  application:
+    name: portfolio
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/portfolio}
+    username: ${DB_USERNAME:portfolio}
+    password: ${DB_PASSWORD:portfolio}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+        format_sql: true
+  flyway:
+    enabled: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size: ${APP_MAX_FILE_SIZE:10MB}
+      max-request-size: ${APP_MAX_REQUEST_SIZE:25MB}
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    session:
+      cookie:
+        same-site: lax
+
+app:
+  cors:
+    allowed-origins: ${APP_ALLOWED_ORIGINS:http://localhost:5173}
+  storage:
+    upload-dir: ${APP_UPLOAD_DIR:./uploads}
+    public-url-prefix: /uploads/**
+    public-url-base: /uploads
+    max-image-size-bytes: ${APP_MAX_IMAGE_SIZE_BYTES:10485760}
+  seed:
+    enabled: ${APP_SEED_ENABLED:true}
+    admin-username: ${APP_ADMIN_USERNAME:admin}
+    admin-password: ${APP_ADMIN_PASSWORD:change-me-now}
+  site:
+    name: ${APP_SITE_NAME:M Creative Portfolio}
+    designer-name: ${APP_DESIGNER_NAME:Morgan Carter}
+    tagline: ${APP_TAGLINE:Graphic design, branding, and thoughtful visual systems.}
+    about-snippet: ${APP_ABOUT_SNIPPET:Student graphic designer building clear, image-led brand experiences.}
+    email: ${APP_CONTACT_EMAIL:morgan@example.com}
+    linkedin-url: ${APP_LINKEDIN_URL:https://www.linkedin.com}
+    instagram-url: ${APP_INSTAGRAM_URL:https://www.instagram.com}
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+logging:
+  level:
+    org.springframework.security: INFO
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+server:
+  forward-headers-strategy: framework
